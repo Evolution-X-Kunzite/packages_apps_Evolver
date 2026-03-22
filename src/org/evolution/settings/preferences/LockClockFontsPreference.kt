@@ -58,8 +58,9 @@ class LockClockFontsPreference @JvmOverloads constructor(
 
         val current = getAppliedPkg()
         val time = pickerClockText(ctx)
+        val defaultLabel = ctx.getString(R.string.themes_lock_screen_clock_font_default)
         val options = pkgs.map { pkg ->
-            PickerOption(label = if (pkg == "android") "Default" else getLabelSafe(ctx, pkg)) {
+            PickerOption(label = if (pkg == "android") defaultLabel else getLabelSafe(ctx, pkg)) {
                 // Loaded when the row scrolls into view, not for the whole list up front.
                 val family = remember(pkg) { getTypefaceSafe(ctx, pkg)?.let { FontFamily(it) } }
                 Text(
@@ -137,7 +138,7 @@ class LockClockFontsPreference @JvmOverloads constructor(
     private fun updateSummary() {
         val applied = getAppliedPkg()
         summary = if (applied == "android") {
-            "Default"
+            context.getString(R.string.themes_lock_screen_clock_font_default)
         } else {
             getLabelSafe(context, applied)
         }
