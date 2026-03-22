@@ -1262,6 +1262,7 @@
 
     <!-- Fonts -->
     <string name="font_styles_title">Font styles</string>
+    <string name="font_default">Default</string>
     <string name="font_styles_summary">Change the system font style</string>
     <string name="font_preview_dialog_title">Font preview</string>
     <string name="font_preview_quote">Fear is the enemy of innovation.</string>

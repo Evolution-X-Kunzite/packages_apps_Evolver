@@ -97,6 +97,7 @@ class FontsPickerPreference @JvmOverloads constructor(
         // The custom font, when installed, is listed first and is the selected row.
         val offset = if (hasCustomFont) 1 else 0
         val current = if (hasCustomFont) CUSTOM_PKG_KEY else getAppliedPkg()
+        val defaultLabel = ctx.getString(R.string.font_default)
         val options = buildList {
             if (hasCustomFont) {
                 add(PickerOption(customFontName, labelFontFamily = { FontFamily(customTypeface) }))
@@ -104,7 +105,7 @@ class FontsPickerPreference @JvmOverloads constructor(
             pkgs.forEach { pkg ->
                 add(
                     PickerOption(
-                        label = if (pkg == "android") "Default" else getLabelSafe(ctx, pkg),
+                        label = if (pkg == "android") defaultLabel else getLabelSafe(ctx, pkg),
                         labelFontFamily = { getTypefaceSafe(ctx, pkg)?.let { FontFamily(it) } },
                     )
                 )
@@ -226,7 +227,7 @@ class FontsPickerPreference @JvmOverloads constructor(
             hasCustomFont -> customFontName
             else -> {
                 val applied = getAppliedPkg()
-                if (applied == "android") "Default" else getLabelSafe(context, applied)
+                if (applied == "android") context.getString(R.string.font_default) else getLabelSafe(context, applied)
             }
         }
     }
