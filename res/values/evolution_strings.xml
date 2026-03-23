@@ -1586,6 +1586,7 @@
 
     <!-- Fonts -->
     <string name="font_styles_title">Font styles</string>
+    <string name="font_default">Default</string>
     <string name="font_styles_summary">Change the system font style</string>
     <string name="font_preview_text">The quick brown\nfox jumps over the\nlazy dog\n\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijkl\nmnopqrstuvwxyz\n1234567890</string>
     <string name="font_picker_select_font">Select font</string>
