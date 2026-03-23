@@ -5,7 +5,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Evolver -->
-    <string name="evolver_dashboard_title">O Evolver</string>
+    <string name="evolver_dashboard_title">The Evolver</string>
     <string name="evolver_dashboard_summary">Evoluindo seu dispositivo, do seu jeito</string>
 
     <!-- Categories -->
@@ -138,7 +138,7 @@
     <string name="monet_engine_color_source_home">Papel de parede da tela inicial</string>
     <string name="monet_engine_color_source_lock">Papel de parede da tela de bloqueio</string>
     <string name="monet_engine_color_source_preset">Predefinição</string>
-
+    
     <!-- Per-palette chroma override -->
     <string name="chroma_accent1_title">Croma primário</string>
     <string name="chroma_accent2_title">Croma secundário</string>
@@ -223,8 +223,8 @@
     <string name="pulse_height_multiplier_summary">Ajustar a altura da visualização</string>
 
     <!-- Lockscreen Clock Highlight Guide -->
-    <string name="ls_clock_title">Relógios da tela de bloqueio</string>
-    <string name="ls_clock_summary">Defina o estilo do relógio e os widgets</string>
+    <string name="ls_clock_title">Relógio da tela de bloqueio</string>
+    <string name="ls_clock_summary">Defina o estilo do relógio e widgets</string>
     <string name="clock_styles_disclaimer_title">Antes de continuar</string>
     <string name="clock_styles_disclaimer_message">Para a melhor experiência com estilos de relógio e widgets, certifique-se de:\n\n• Desativar o Smartspace da tela de bloqueio\n• Desativar o clima da tela de bloqueio\n• Desativar o estilo de relógio grande\n\nVocê pode encontrar essas opções nas configurações da tela de bloqueio.</string>
     <string name="ls_clock_face_highlight_text">Deslize para a esquerda ou direita para pré-visualizar os estilos de relógio</string>
@@ -254,8 +254,8 @@
     <string name="lockscreen_custom_clock_frame_margin_top_title">Margem superior</string>
     <string name="lockscreen_custom_clock_frame_margin_top_summary">Ajustar a altura do estilo de relógio personalizado</string>
     <string name="lockscreen_custom_clock_color_mode_title">Modo de cor</string>
-    <string name="lockscreen_custom_clock_aod_anim_title">Animação na AOD</string>
-    <string name="lockscreen_custom_clock_aod_anim_summary">Ativar animação na AOD para o estilo de relógio personalizado</string>
+    <string name="lockscreen_custom_clock_aod_anim_title">Animação no AOD</string>
+    <string name="lockscreen_custom_clock_aod_anim_summary">Ativar animação no AOD para o estilo de relógio personalizado</string>
     <string name="lockscreen_custom_clock_wobble_on_charge_title">Efeito de balanço ao carregar</string>
     <string name="lockscreen_custom_clock_wobble_on_charge_summary">Mostrar efeito de balanço no relógio quando conectado ao carregador</string>
     <string name="lockscreen_custom_clock_frame_margin_start_title">Deslocamento horizontal</string>
@@ -349,13 +349,13 @@
     <string name="ls_media_art_pixel_size_summary">Ajustar o tamanho do pixel da capa exibida na tela de bloqueio</string>
 
     <!-- AOD Media Settings -->
-    <string name="show_on_aod_title">Mostrar na AOD</string>
+    <string name="show_on_aod_title">Mostrar no AOD</string>
     <string name="show_on_aod_summary">Exibir a capa da mídia na tela sempre ativa</string>
-    <string name="aod_brightness_title">Brilho da AOD</string>
+    <string name="aod_brightness_title">Brilho do AOD</string>
 
     <!-- Lock screen/Now Playing -->
     <string name="nowplaying_title">Tocando agora</string>
-    <string name="nowplaying_summary">Mostrar informações da música em reprodução na tela de bloqueio e na AOD</string>
+    <string name="nowplaying_summary">Mostrar informações da música em reprodução na tela de bloqueio e no AOD</string>
     <string name="nowplaying_appearance_title">Aparência</string>
     <string name="nowplaying_color_mode_title">Modo de cor do texto</string>
     <string name="nowplaying_vertical_position_title">Posição vertical</string>
@@ -401,13 +401,13 @@
     <!-- Lock screen/AOD -->
     <string name="aod_display_category_title">Tela sempre ativa</string>
     <string name="aod_pulse_category_title">Pulse/Doze</string>
-    <string name="lockscreen_custom_image_enabled_title">Imagem da AOD</string>
-    <string name="lockscreen_custom_image_title">Selecionar imagem da AOD</string>
+    <string name="lockscreen_custom_image_enabled_title">Imagem do AOD</string>
+    <string name="lockscreen_custom_image_title">Selecionar imagem do AOD</string>
     <string name="lockscreen_custom_image_summary">Definir uma imagem personalizada para a tela sempre ativa</string>
     <string name="lockscreen_custom_image_pick_summary">Selecione uma imagem da galeria</string>
     <string name="custom_aod_image_not_supported">Não suportado pelo estilo de relógio selecionado</string>
     <string name="ambient_display_category_title">Tela ambiente</string>
-    <string name="ambient_bottom_title">Conteúdo inferior da AOD</string>
+    <string name="ambient_bottom_title">Conteúdo inferior do AOD</string>
     <string name="ambient_battery_disable_title">Desativado</string>
     <string name="ambient_battery_percent_title">Nível da bateria</string>
     <string name="ambient_battery_both_title">Nível da bateria e temperatura</string>
@@ -441,30 +441,30 @@
     <string name="lockscreen_smartspace_summary">Mostrar o Google Smartspace quando disponível</string>
 
     <!-- Lock screen/Depth wallpaper -->
-    <string name="depthwall_file_header_select_title">Selecionar o sujeito do papel de parede com profundidade</string>
-    <string name="depthwall_file_header_select_summary">Selecione a imagem do sujeito do papel de parede com profundidade no armazenamento.</string>
-    <string name="depthwall_wallpaper_enabled_title">Papel de parede com profundidade</string>
-    <string name="depthwall_wallpaper_enabled_summary_tile">Aplicar efeito de\nprofundidade ao papel de parede</string>
-    <string name="depthwall_wallpaper_enabled_summary">Ativar papel de parede com profundidade inspirado no iOS. Requer uma imagem de sujeito.</string>
-    <string name="depthwall_wallpaper_opacity_title">Opacidade do papel de parede com profundidade</string>
-    <string name="depth_wallpaper_bottom_fade_title">Desvanecimento inferior</string>
-    <string name="depth_wallpaper_bottom_fade_summary">Desvanecer o papel de parede na parte inferior</string>
-    <string name="depth_wallpaper_fade_curve_title">Curva de desvanecimento</string>
-    <string name="depth_wallpaper_fade_curve_summary">Ajustar a curva de desvanecimento do papel de parede</string>
-    <string name="depth_wallpaper_bottom_inset_title">Recuo inferior</string>
-    <string name="depth_wallpaper_bottom_inset_summary">Ajustar o recuo do papel de parede na parte inferior</string>
-    <string name="depthwall_auto_subject_title">Sujeito automático do papel de parede com profundidade</string>
-    <string name="depthwall_auto_subject_summary">Extrair automaticamente o sujeito do papel de parede para o efeito de profundidade</string>
-    <string name="depthwall_extract_now_title">Extrair sujeito agora</string>
-    <string name="depthwall_extract_now_summary">Acionar a extração do sujeito do papel de parede imediatamente (defina o papel de parede separadamente para a tela de bloqueio)</string>
-    <string name="depthwall_extracting_toast">Extraindo sujeito do papel de parede…</string>
-    <string name="depthwall_extraction_complete_toast">Extração do sujeito concluída!</string>
-    <string name="depthwall_storage_permission_denied">É necessária permissão de armazenamento para extrair automaticamente sujeitos dos papéis de parede.</string>
-    <string name="depthwall_clear_subject_title">Limpar imagem do sujeito</string>
-    <string name="depthwall_clear_subject_summary">Remover o sujeito extraído ou definido manualmente atual</string>
-    <string name="depthwall_clear_subject_confirm_message">Isso removerá a imagem atual do sujeito do papel de parede com profundidade. Continuar?</string>
-    <string name="depthwall_clear_subject_done_toast">Imagem do sujeito removida</string>
-    <string name="dw_footer_text">O Papel de parede com profundidade sobrepõe uma imagem de sujeito acima do relógio da tela de bloqueio, inspirado na segmentação de sujeito dos papéis de parede do iOS.\n\nConfiguração:\n1. Defina um papel de parede com o fundo que deseja atrás do sujeito.\n2. Selecione uma imagem de sujeito para sobrepor acima do relógio da tela de bloqueio.\n3. Ajuste os deslocamentos e a opacidade conforme sua preferência.</string>
+    <string name="depthwall_file_header_select_title">Escolher objeto da foto</string>
+    <string name="depthwall_file_header_select_summary">Selecione na galeria a imagem que ficará por cima do relógio</string>
+    <string name="depthwall_wallpaper_enabled_title">Efeito de profundidade</string>
+    <string name="depthwall_wallpaper_enabled_summary_tile">Aplicar efeito 3D\nno papel de parede</string>
+    <string name="depthwall_wallpaper_enabled_summary">Ativa o efeito 3D estilo iPhone (parte da foto fica por cima do relógio). É necessário escolher uma imagem recortada.</string>
+    <string name="depthwall_wallpaper_opacity_title">Opacidade do efeito</string>
+    <string name="depth_wallpaper_bottom_fade_title">Suavizar parte inferior</string>
+    <string name="depth_wallpaper_bottom_fade_summary">Esmaecer a imagem na parte de baixo da tela</string>
+    <string name="depth_wallpaper_fade_curve_title">Estilo do esmaecimento</string>
+    <string name="depth_wallpaper_fade_curve_summary">Ajusta o gradiente do efeito de transparência</string>
+    <string name="depth_wallpaper_bottom_inset_title">Margem inferior</string>
+    <string name="depth_wallpaper_bottom_inset_summary">Ajusta a altura da imagem na parte de baixo da tela</string>
+    <string name="depthwall_auto_subject_title">Recorte automático</string>
+    <string name="depthwall_auto_subject_summary">Identificar e recortar o objeto ou pessoa principal da foto automaticamente</string>
+    <string name="depthwall_extract_now_title">Recortar agora</string>
+    <string name="depthwall_extract_now_summary">Processar o papel de parede agora mesmo (Lembre-se de definir o papel de parede da tela de bloqueio primeiro)</string>
+    <string name="depthwall_extracting_toast">Recortando imagem para o efeito…</string>
+    <string name="depthwall_extraction_complete_toast">Recorte concluído!</string>
+    <string name="depthwall_storage_permission_denied">Permissão de acesso aos arquivos é necessária para recortar a imagem.</string>
+    <string name="depthwall_clear_subject_title">Remover recorte atual</string>
+    <string name="depthwall_clear_subject_summary">Apaga o recorte automático ou a imagem manual selecionada</string>
+    <string name="depthwall_clear_subject_confirm_message">Isso vai remover a imagem recortada atual. Deseja continuar?</string>
+    <string name="depthwall_clear_subject_done_toast">Recorte removido</string>
+    <string name="dw_footer_text">O Efeito de Profundidade coloca uma imagem recortada por cima do relógio da tela de bloqueio, igual ao do iPhone.\n\nComo configurar:\n1. Defina um papel de parede normal com o fundo que deseja.\n2. Escolha ou recorte a pessoa/objeto que ficará por cima do relógio.\n3. Ajuste a transparência e posição como preferir.</string>
 
     <!-- Status bar -->
     <string name="status_bar_toggle_brightness_title">Controle de brilho</string>
@@ -480,7 +480,7 @@
     <string name="status_bar_quick_qs_pulldown_right">Direita</string>
     <string name="status_bar_quick_qs_pulldown_always">Sempre mostrar as configurações rápidas ao puxar a barra de status</string>
     <string name="status_bar_icons_category">Ícones</string>
-    <string name="status_bar_tuner_title">Ajustador da barra de status</string>
+    <string name="status_bar_tuner_title">Ícones da barra de status</string>
     <string name="status_bar_tuner_summary">Escolha quais ícones do sistema podem ser exibidos</string>
     <string name="status_bar_colored_icons_title">Ícones coloridos</string>
     <string name="status_bar_colored_icons_summary">Usar os ícones do launcher para as notificações dos apps</string>
@@ -490,14 +490,14 @@
     <string name="status_bar_lyric_summary">Mostrar letras na barra de status</string>
 
     <!-- Status bar/Carrier -->
-    <string name="status_bar_carrier_category_title">Etiqueta da operadora</string>
-    <string name="lockscreen_show_carrier_title">Mostrar etiqueta da operadora</string>
+    <string name="status_bar_carrier_category_title">Logo da operadora</string>
+    <string name="lockscreen_show_carrier_title">Mostrar logo da operadora</string>
     <string name="carrier_show_lockscreen_only">Somente na tela de bloqueio</string>
     <string name="carrier_show_statusbar_only">Somente na barra de status</string>
     <string name="carrier_show_both">Tela de bloqueio e barra de status</string>
-    <string name="custom_carrier_label_title">Etiqueta de operadora personalizada</string>
-    <string name="custom_carrier_label_summary">Toque para definir uma etiqueta de operadora personalizada</string>
-    <string name="custom_carrier_label_dialog_message">Substitua a etiqueta da operadora por um texto personalizado. Deixe vazio para usar a etiqueta real da operadora.</string>
+    <string name="custom_carrier_label_title">Logo de operadora personalizado</string>
+    <string name="custom_carrier_label_summary">Toque para definir um logo de operadora personalizado</string>
+    <string name="custom_carrier_label_dialog_message">Substitua a logo da operadora por um texto personalizado. Deixe vazio para usar o logo real da operadora.</string>
 
     <!-- Status bar/Battery -->
     <string name="status_bar_battery_category_title">Bateria</string>
@@ -614,12 +614,12 @@
 
     <!-- Status bar/Logo -->
     <string name="status_bar_logo_title">Logo</string>
-    <string name="status_bar_logo_summary">Exibir uma logo personalizada na barra de status</string>
-    <string name="status_bar_logo_position_title">Posição da logo</string>
+    <string name="status_bar_logo_summary">Exibir um logo personalizado na barra de status</string>
+    <string name="status_bar_logo_position_title">Posição do logo</string>
     <string name="status_bar_logo_position_left">Esquerda</string>
     <string name="status_bar_logo_position_right">Direita</string>
-    <string name="status_bar_logo_style_title">Estilo da logo</string>
-    <string name="status_bar_logo_style_summary">Selecione uma logo personalizada para exibir</string>
+    <string name="status_bar_logo_style_title">Estilo do logo</string>
+    <string name="status_bar_logo_style_summary">Selecione um logo personalizado para exibir</string>
     <string name="status_bar_logo_style_evolution">Evolution X</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
@@ -760,7 +760,7 @@
     <string name="dynamic_bar_footer_body">A Dynamic Bar transforma sua barra de status em um hub interativo. Os chips aparecem e animam com base em eventos do sistema, dando a você informações rápidas sem interromper seu fluxo de uso.\n\nCada tipo de evento tem sua própria cor de destaque e cartão expandido com ações rápidas.</string>
 
     <!-- Status bar/Cutout progress ring -->
-    <string name="cutout_progress_title">Anel de progresso do recorte</string>
+    <string name="cutout_progress_title">Anel de progresso</string>
     <string name="cutout_progress_summary">Mostrar um anel de progresso ao redor do recorte da câmera</string>
     <string name="cutout_progress_cat_appearance">Aparência</string>
     <string name="cutout_progress_cat_behaviour">Comportamento</string>
@@ -843,12 +843,12 @@
     <string name="cutout_progress_music_opacity_title">Opacidade do anel</string>
     <string name="cutout_progress_music_stroke_title">Espessura do traço</string>
     <string name="cutout_progress_music_clockwise_title">Direção horária</string>
-    <string name="cutout_progress_music_aod_title">Mostrar na AOD</string>
+    <string name="cutout_progress_music_aod_title">Mostrar no AOD</string>
     <string name="cutout_progress_music_aod_summary">Manter o anel de música visível na tela ambiente</string>
 
     <!-- Status bar/Bluetooth -->
-    <string name="status_bar_bluetooth_battery_title">Status de bateria do Bluetooth</string>
-    <string name="status_bar_bluetooth_battery_summary">Exibir o status de bateria do dispositivo Bluetooth conectado, se disponível</string>
+    <string name="status_bar_bluetooth_battery_title">Status de bateria do bluetooth</string>
+    <string name="status_bar_bluetooth_battery_summary">Exibir o status de bateria do dispositivo bluetooth conectado, se disponível</string>
 
     <!-- Status bar/Misc -->
     <string name="max_visible_notification_icons_title">Máximo de ícones de notificação</string>
@@ -1199,7 +1199,7 @@
     <string name="spoofing_reset_defaults_dialog_message">Isso limpa a configuração do Play Integrity, a substituição do patch de segurança e a configuração do GameProps, e restaura a lista de alvos padrão do TrickyStore. Sua keybox é mantida. O Play Integrity e o nível de patch são buscados novamente logo em seguida. As alternâncias de ativação não são alteradas.</string>
     <string name="spoofing_reset_defaults_confirm">Restaurar</string>
     <string name="spoofing_reset_defaults_done">Configurações de spoofing restauradas</string>
-    <string name="tensor_spoof_title">Alvos de recursos Tensor</string>
+    <string name="tensor_spoof_title">Alvos de recursos do Tensor</string>
     <string name="tensor_spoof_summary">Conceder aos apps selecionados acesso a recursos de IA exclusivos do Pixel Tensor</string>
     <string name="tensor_spoof_enable">Spoofing Tensor</string>
     <string name="tensor_spoof_enable_summary">Conceder aos apps selecionados acesso a recursos exclusivos do Pixel Tensor</string>
@@ -1446,8 +1446,8 @@
     <string name="ts_fetch_keybox_chain_invalid_refetch">Cadeia da keybox inválida, buscando substituta…</string>
 
     <!-- Wallpaper styles -->
-    <string name="wallpaper_settings_title">Estilos de papel de parede</string>
-    <string name="wallpaper_settings_summary">Configurar estilos e efeitos de papel de parede</string>
+    <string name="wallpaper_settings_title">Estilo de papel de parede</string>
+    <string name="wallpaper_settings_summary">Configurar o estilo e os efeitos do papel de parede</string>
     <string name="wallpaper_blur_title">Efeito de desfoque</string>
     <string name="wallpaper_blur_filter">Tipo de desfoque</string>
     <string name="wallpaper_effects_title">Efeitos visuais</string>
@@ -1458,8 +1458,8 @@
     <string name="glass_blur">Desfoque de vidro</string>
     <string name="frosted_blur">Desfoque fosco</string>
     <string name="wallpaper_dim_level_summary">Configurar o nível de escurecimento do papel de parede</string>
-    <string name="wallpaper_styles_footer">Para que os estilos de papel de parede funcionem de forma eficaz, defina os papéis de parede da tela de bloqueio e da tela inicial separadamente. Usar a mesma imagem é aceitável, mas evite aplicá-la a ambas ao mesmo tempo. Isso não é necessário ao usar a opção "Ambos" para estilos de desfoque ou escurecimento.</string>
-    <string name="wallpaper_performance_warning">⚠ Aviso de desempenho: esses efeitos exigem muitos recursos e podem afetar o desempenho em dispositivos mais simples. Podem causar travamentos, consumo de bateria ou engasgos em telefones mais antigos.</string>
+    <string name="wallpaper_styles_footer">Para que o estilo de papel de parede funcione de forma eficaz, defina os papéis de parede da tela de bloqueio e da tela inicial separadamente. Usar a mesma imagem é aceitável, mas evite aplicá-la a ambas ao mesmo tempo. Isso não é necessário ao usar a opção "Ambos" para o estilo de desfoque ou escurecimento.</string>
+    <string name="wallpaper_performance_warning">⚠ Aviso de desempenho: esses efeitos exigem muitos recursos e podem afetar o desempenho em dispositivos mais simples. Podem causar travamentos, consumo de bateria ou engasgos.</string>
     <string name="wallpaper_saturation_title">Nível de saturação</string>
     <string name="wallpaper_saturation_summary">Aumentar ou reduzir a intensidade das cores</string>
     <string name="wallpaper_pixelation_size_title">Tamanho da pixelização</string>
@@ -1495,7 +1495,7 @@
     <string name="lock_glymps_timer_interval_title">Intervalo do timer</string>
     <string name="lock_glymps_timer_interval_summary">Com que frequência trocar o papel de parede automaticamente</string>
     <string name="lock_glymps_footer_title">Informações</string>
-    <string name="lock_glymps_footer_text">📁 Pasta local: /sdcard/Glymps\n\n⚠ Dispositivos mais simples podem apresentar leve lentidão.\n\n🎨 Dica: use um destaque personalizado nas configurações do Monet para cores estáveis.</string>
+    <string name="lock_glymps_footer_text">📁 Pasta local: /sdcard/Glymps\n\n⚠ Dispositivos mais simples podem apresentar uma leve lentidão.\n\n🎨 Dica: use um destaque personalizado nas configurações do Monet para cores estáveis.</string>
     <string name="lock_glymps_preview_category">Papéis de parede atuais</string>
     <string name="lock_glymps_preview_title">Pré-visualização do papel de parede</string>
     <string name="lock_glymps_preview_summary">Papéis de parede atuais da tela de bloqueio e da tela inicial</string>
@@ -1585,7 +1585,8 @@
     <string name="progress_bar_style4">Shishu</string>
 
     <!-- Fonts -->
-    <string name="font_styles_title">Estilos de fonte</string>
+    <string name="font_styles_title">Estilo de fonte</string>
+    <string name="font_default">Padrão</string>
     <string name="font_styles_summary">Alterar o estilo da fonte do sistema</string>
     <string name="font_preview_text">A rápida raposa\nmarrom pula sobre\no cão preguiçoso\n\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijkl\nmnopqrstuvwxyz\n1234567890</string>
     <string name="font_picker_select_font">Selecionar fonte</string>
@@ -1763,7 +1764,7 @@
 
     <!-- Charging animation -->
     <string name="charging_animation_title">Animação de carregamento</string>
-    <string name="charging_animation_summary">Mostrar efeitos visuais ao carregar na tela de bloqueio ou na AOD</string>
+    <string name="charging_animation_summary">Mostrar efeitos visuais ao carregar na tela de bloqueio ou no AOD</string>
     <string name="charging_animation_style_category_title">Estilo da animação</string>
     <string name="charging_animation_style_title">Tipo de efeito</string>
     <string name="charging_ripple_opacity_title">Opacidade da ondulação</string>
@@ -1827,4 +1828,47 @@
     <!-- Wallpaper zoom -->
     <string name="wallpaper_zoom_title">Zoom do papel de parede</string>
     <string name="wallpaper_zoom_summary">Desative para mostrar o papel de parede sem zoom extra</string>
+    
+    <!-- Arrays -->
+
+    <!-- Themes - Lock/Unlock Sounds -->
+    <string-array name="themes_lock_unlock_sounds_entries">
+        <item>Padrão</item>
+        <item>Amazon Fire</item>
+        <item>Asus Zenfone Max</item>
+        <item>Essential PH-1</item>
+        <item>HTC M8</item>
+        <item>Huawei</item>
+        <item>Hyper OS</item>
+        <item>Iqoo</item>
+        <item>LG G3</item>
+        <item>Porta do Minecraft</item>
+        <item>MIUI 10</item>
+        <item>MIUI 11</item>
+        <item>Nextbit</item>
+        <item>Nokia X</item>
+        <item>Old School IOS</item>
+        <item>One UI</item>
+        <item>OOS 14</item>
+        <item>Razer Phone</item>
+        <item>Canção</item>
+        <item>Dispositivo Windows</item>
+        <item>Erro do Windows</item>
+    </string-array>
+
+    <!-- Visual Effects -->
+    <string-array name="wallpaper_effect_entries">
+        <item>Nenhum</item>
+        <item>Desfoque granulado</item>
+        <item>Aberraçao cromática</item>
+        <item>Vinheta</item>
+        <item>Pixelado</item>
+        <item>Saturação</item>
+        <item>Sépia</item>
+        <item>Nitidez</item>
+        <item>Escala de cinza</item>
+        <item>Negativo</item>
+        <item>Desfoque radial</item>
+        <item>Posterizar</item>
+    </string-array>
 </resources>
