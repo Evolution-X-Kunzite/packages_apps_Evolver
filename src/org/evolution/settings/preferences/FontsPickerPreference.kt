@@ -181,7 +181,7 @@ class FontsPickerPreference @JvmOverloads constructor(
             hasCustomFont -> customFontName
             else -> {
                 val applied = getAppliedPkg()
-                if (applied == "android") "Default" else getLabelSafe(context, applied)
+                if (applied == "android") context.getString(R.string.font_default) else getLabelSafe(context, applied)
             }
         }
     }
@@ -291,7 +291,7 @@ class FontsPickerPreference @JvmOverloads constructor(
                 }
                 else -> {
                     val pkg = pkgForPosition(position)
-                    val label = if (pkg == "android") "Default" else getLabelSafe(ctx, pkg)
+                    val label = if (pkg == "android") ctx.getString(R.string.font_default) else getLabelSafe(ctx, pkg)
                     val tf = getTypefaceSafe(ctx, pkg)
 
                     holder.title.text = label
