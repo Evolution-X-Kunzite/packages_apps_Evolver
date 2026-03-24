@@ -1204,6 +1204,11 @@
     <string name="lock_glymps_custom_urls_summary">Add or remove custom wallpaper URLs</string>
     <string name="lock_glymps_folder_title">Local folder</string>
     <string name="lock_glymps_folder_summary">View folder location and wallpaper count (max 10 wallpapers)</string>
+    <string name="lock_glymps_folder_summary_missing">Folder not found. Tap to create.</string>
+    <plurals name="lock_glymps_folder_summary_count">
+        <item quantity="one">%1$d wallpaper found in %2$s</item>
+        <item quantity="other">%1$d wallpapers found in %2$s</item>
+    </plurals>
     <string name="lock_glymps_download_category">Download settings</string>
     <string name="lock_glymps_wifi_only_title">Wi-Fi only</string>
     <string name="lock_glymps_wifi_only_summary">Download wallpapers only when connected to Wi-Fi</string>

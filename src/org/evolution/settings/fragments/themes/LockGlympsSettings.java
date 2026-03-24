@@ -22,6 +22,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
+import android.widget.Toast;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -120,7 +121,7 @@ public class LockGlympsSettings extends SettingsPreferenceFragment
                 updateTimerVisibility(currentMode);
             }
         }
-        
+
         mTimerIntervalPreference = findPreference(KEY_TIMER_INTERVAL);
         if (mTimerIntervalPreference != null) {
             mTimerIntervalPreference.setOnPreferenceChangeListener(this);
@@ -252,22 +253,27 @@ public class LockGlympsSettings extends SettingsPreferenceFragment
         }
     }
 
+    private int countWallpapers(File dir) {
+        File[] files = dir.listFiles((d, name) -> {
+            String lower = name.toLowerCase();
+            return lower.endsWith(".jpg") || lower.endsWith(".jpeg")
+                    || lower.endsWith(".png") || lower.endsWith(".webp");
+        });
+        return files != null ? files.length : 0;
+    }
+
     private void updateFolderInfo() {
         if (mFolderInfoPreference == null) return;
 
         File storageDir = new File(Environment.getExternalStorageDirectory(), STORAGE_FOLDER);
 
         if (!storageDir.exists()) {
-            mFolderInfoPreference.setSummary("Folder not found. Tap to create.");
+            mFolderInfoPreference.setSummary(R.string.lock_glymps_folder_summary_missing);
         } else {
-            File[] files = storageDir.listFiles((dir, name) -> {
-                String lower = name.toLowerCase();
-                return lower.endsWith(".jpg") || lower.endsWith(".jpeg") ||
-                       lower.endsWith(".png") || lower.endsWith(".webp");
-            });
-
-            int count = (files != null) ? files.length : 0;
-            mFolderInfoPreference.setSummary(count + " wallpapers found in " + storageDir.getPath());
+            int count = countWallpapers(storageDir);
+            mFolderInfoPreference.setSummary(getResources().getQuantityString(
+                    R.plurals.lock_glymps_folder_summary_count,
+                    count, count, storageDir.getPath()));
         }
     }
 
@@ -288,24 +294,18 @@ public class LockGlympsSettings extends SettingsPreferenceFragment
                 true,
                 () -> {
                     if (storageDir.mkdirs()) {
-                        android.widget.Toast.makeText(context,
+                        Toast.makeText(context,
                             getString(R.string.lock_glymps_folder_created, storageDir.getPath()),
-                            android.widget.Toast.LENGTH_LONG).show();
+                            Toast.LENGTH_LONG).show();
                         updateFolderInfo();
                     } else {
-                        android.widget.Toast.makeText(context,
+                        Toast.makeText(context,
                             R.string.lock_glymps_folder_create_failed,
-                            android.widget.Toast.LENGTH_SHORT).show();
+                            Toast.LENGTH_SHORT).show();
                     }
                 });
         } else {
-            File[] files = storageDir.listFiles((dir, name) -> {
-                String lower = name.toLowerCase();
-                return lower.endsWith(".jpg") || lower.endsWith(".jpeg") ||
-                       lower.endsWith(".png") || lower.endsWith(".webp");
-            });
-
-            int count = (files != null) ? files.length : 0;
+            int count = countWallpapers(storageDir);
 
             ExpressiveDialogs.showConfirmDialog(
                 context,
@@ -361,9 +361,9 @@ public class LockGlympsSettings extends SettingsPreferenceFragment
 
                 notifyServiceToRefresh(context);
 
-                android.widget.Toast.makeText(context,
+                Toast.makeText(context,
                     R.string.lock_glymps_custom_urls_saved,
-                    android.widget.Toast.LENGTH_SHORT).show();
+                    Toast.LENGTH_SHORT).show();
             });
     }
 
@@ -385,9 +385,9 @@ public class LockGlympsSettings extends SettingsPreferenceFragment
                 intent.setAction("CLEAR_CACHE");
                 context.startService(intent);
 
-                android.widget.Toast.makeText(context,
+                Toast.makeText(context,
                     R.string.lock_glymps_cache_cleared,
-                    android.widget.Toast.LENGTH_SHORT).show();
+                    Toast.LENGTH_SHORT).show();
 
                 SystemUtils.showSystemUiRestartDialog(context);
             });
@@ -401,7 +401,7 @@ public class LockGlympsSettings extends SettingsPreferenceFragment
             mHandler = null;
         }
     }
-    
+
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.EVOLVER;
