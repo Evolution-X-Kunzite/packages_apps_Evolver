@@ -18,7 +18,7 @@
     <string name="quick_settings_title">Configurações rápidas</string>
     <string name="quick_settings_summary">Interface, controle de brilho, layout</string>
     <string name="notifications_title">Notificações</string>
-    <string name="notifications_summary">Heads up, luz de borda, sons</string>
+    <string name="notifications_summary">Heads up, iluminação de borda, sons</string>
     <string name="power_menu_title">Menu de energia</string>
     <string name="power_menu_summary">Ações, tela de bloqueio</string>
     <string name="buttons_title">Botões</string>
@@ -1017,7 +1017,7 @@
     <string name="quick_settings_footer_settings_icon_title">Atalho de configurações</string>
     <string name="qs_split_shade_enabled_title">Tela dividida em paisagem</string>
     <string name="qs_split_shade_enabled_summary">Ativar configurações rápidas experimentais em tela dividida no modo paisagem. Pode afetar as notificações heads-up em paisagem</string>
-    <string name="qs_header_clock_style_title">Estilo do relógio no cabeçalho das QS</string>
+    <string name="qs_header_clock_style_title">Estilo do relógio do cabeçalho QS</string>
     <string name="qs_header_style1">Chip</string>
     <string name="qs_header_style2">Oxygen</string>
     <string name="qs_header_style3">Analógico</string>
@@ -1028,19 +1028,19 @@
     <string name="qs_show_media_player_hide">Ocultar</string>
     <string name="qs_show_media_player_top">Mostrar no topo</string>
     <string name="qs_show_media_player_bottom">Mostrar no rodapé</string>
-    <string name="qs_tile_gradient_title">Gradiente dos blocos de QS</string>
-    <string name="qs_tile_gradient_summary">Ativar fundos em gradiente para os blocos de QS</string>
-    <string name="qs_tiles_haptic_feedback_title">Vibrar ao tocar em um bloco de QS</string>
-    <string name="qs_panel_tile_haptic_intensity_title">Intensidade dos blocos de QS</string>
-    <string name="qs_haptics_intensity_title">Intensidade do deslize nas QS</string>
+    <string name="qs_tile_gradient_title">Gradiente dos blocos QS</string>
+    <string name="qs_tile_gradient_summary">Ativar fundo em gradiente para os blocos QS</string>
+    <string name="qs_tiles_haptic_feedback_title">Vibrar ao tocar em um bloco QS</string>
+    <string name="qs_panel_tile_haptic_intensity_title">Intensidade dos blocos QS</string>
+    <string name="qs_haptics_intensity_title">Intensidade do deslize no painel QS</string>
 
     <!-- QS widget -->
-    <string name="qs_widget_panel_title">Mostrar widget no painel de QS</string>
-    <string name="qs_widget_panel_summary">Mostrar widgets de mídia, volume e brilho no painel de QS</string>
+    <string name="qs_widget_panel_title">Mostrar widget no painel QS</string>
+    <string name="qs_widget_panel_summary">Mostrar widgets de mídia, volume e brilho no painel QS</string>
     <string name="qs_widget_ios_music_title">Mostrar widget de música estilo iOS</string>
     <string name="qs_widget_ios_music_summary">Mostrar painel de mídia no estilo iOS</string>
     <string name="qs_widget_slider_corner_title">Mostrar controle deslizante arredondado</string>
-    <string name="qs_widget_slider_corner_summary">Mostrar controles deslizantes verticais arredondados no painel de QS</string>
+    <string name="qs_widget_slider_corner_summary">Mostrar controles deslizantes verticais arredondados no painel QS</string>
 
     <!-- Notifications -->
     <string name="notifications_heads_up_title">Heads up</string>
@@ -1090,13 +1090,13 @@
     <string name="essential_remove_confirm">Remover %s das notificações essenciais?</string>
 
     <!-- Notifications/Edge light -->
-    <string name="edge_light_title">Luz de borda</string>
+    <string name="edge_light_title">Iluminação de borda</string>
     <string name="edge_light_summary">Iluminar as bordas da tela ao pulsar uma notificação</string>
     <string name="edge_light_color_mode_title">Modo de cor</string>
     <string name="edge_light_pulse_count_title">Número de pulsos</string>
-    <string name="edge_light_pulse_count_summary">Número de pulsos da luz de borda</string>
+    <string name="edge_light_pulse_count_summary">Número de pulsos da iluminação de borda</string>
     <string name="edge_light_stroke_width_title">Espessura do traço</string>
-    <string name="edge_light_stroke_width_summary">Definir a espessura das barras da luz de borda</string>
+    <string name="edge_light_stroke_width_summary">Definir a espessura das barras da iluminação de borda</string>
     <string name="edge_light_style_title">Estilo de renderização</string>
     <string name="edge_light_style_default">Padrão (esquerda/direita)</string>
     <string name="edge_light_style_frame">Moldura (todos os lados)</string>
@@ -1870,5 +1870,115 @@
         <item>Negativo</item>
         <item>Desfoque radial</item>
         <item>Posterizar</item>
+    </string-array>
+
+    <!-- Nowplaying -->
+    <string-array name="nowplaying_icon_style_entries">
+        <item>Desativado</item>
+        <item>Ícone do aplicativo</item>
+        <item>Ícone de nota musical</item>
+    </string-array>
+
+    <string-array name="nowplaying_color_mode_entries">
+        <item>Claro</item>
+        <item>Cor de Destaque</item>
+        <item>Capa do Álbum</item>
+    </string-array>
+
+    <!-- Charging Animation Style Options -->
+    <string-array name="charging_animation_style_entries">
+        <item>Fluxo de bolhas</item>
+        <item>Spray de brilho neon</item>
+        <item>Efeitos de feixe</item>
+        <item>Efeito plasma</item>
+        <item>Faíscas quânticas</item>
+        <item>Difusão de nebulosa</item>
+        <item>Matriz digital</item>
+        <item>Geofluxo</item>
+    </string-array>
+
+    <!-- Charging Animation Color Mode Options -->
+    <string-array name="charging_color_mode_entries">
+        <item>Verde padrão</item>
+        <item>Cor de destaque</item>
+        <item>Arco-íris</item>
+    </string-array>
+
+    <!-- Dynamic bar -->
+    <string-array name="cutout_progress_finish_style_entries">
+        <item>Pop</item>
+        <item>Cascata segmentada</item>
+        <item>Encaixe (instantâneo)</item>
+    </string-array>
+
+    <string-array name="cutout_progress_easing_entries">
+        <item>Linear</item>
+        <item>Acelerar</item>
+        <item>Desacelerar</item>
+        <item>Suave (In–Out)</item>
+    </string-array>
+
+    <string-array name="cutout_progress_position_entries">
+        <item>Direita</item>
+        <item>Esquerda</item>
+        <item>Superior</item>
+        <item>Inferior</item>
+        <item>Superior direito</item>
+        <item>Superior esquerdo</item>
+        <item>Inferior direito</item>
+        <item>Inferior esquerdo</item>
+    </string-array>
+
+    <string-array name="cutout_progress_truncate_entries">
+        <item>Meio</item>
+        <item>Início</item>
+        <item>Fim</item>
+    </string-array>
+
+    <!-- Lock Glymps Source -->
+    <string-array name="lock_glymps_source_entries">
+        <item>Papéis de parede aleatórios (Picsum)</item>
+        <item>Lista de URLs personalizada</item>
+        <item>Pasta local</item>
+    </string-array>
+
+    <!-- Lock Glymps Cache Size -->
+    <string-array name="lock_glymps_cache_size_entries">
+        <item>3 papéis de parede (~30MB)</item>
+        <item>5 papéis de parede (~50MB)</item>
+        <item>10 papéis de parede (~100MB)</item>
+    </string-array>
+
+    <string-array name="lock_glymps_change_on_entries">
+        <item>Ao ligar a tela</item>
+        <item>Ao desligar a tela (recomendado)</item>
+        <item>Baseado em temporizador</item>
+    </string-array>
+
+    <string-array name="playback_speed_entries">
+        <item>0.25x (Muito lento)</item>
+        <item>0.5x (Lento)</item>
+        <item>0.75x (Um pouco lento)</item>
+        <item>1.0x (Normal)</item>
+        <item>1.25x (Um pouco rápido)</item>
+        <item>1.5x (Rápido)</item>
+        <item>2.0x (Muito rápido)</item>
+    </string-array>
+
+     <!-- Brightness / Volume slider -->
+    <string-array name="widget_entries">
+        <item>Nenhum</item>
+        <item>Calculadora</item>
+        <item>Mídia</item>
+        <item>Temporizador</item>
+        <item>Lanterna</item>
+        <item>Clima</item>
+        <item>Wi-Fi</item>
+        <item>Dados</item>
+        <item>Campainha</item>
+        <item>Bluetooth</item>
+        <item>Hotspot</item>
+        <item>Carteira</item>
+        <item>Leitor de QR Code</item>
     </string-array>
 </resources>
