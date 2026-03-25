@@ -1165,7 +1165,7 @@
     </string-array>
 
     <!-- nowplaying color -->
-    <string-array name="nowplaying_color_mode_entries" translatable="false">
+    <string-array name="nowplaying_color_mode_entries">
         <item>White</item>
         <item>Accent color</item>
         <item>Album art</item>
