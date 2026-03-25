@@ -127,7 +127,7 @@ class LockClockFontsPreference @JvmOverloads constructor(
     private fun updateSummary() {
         val applied = getAppliedPkg()
         summary = if (applied == "android") {
-            "Default"
+            context.getString(R.string.themes_lock_screen_clock_font_default)
         } else {
             getLabelSafe(context, applied)
         }
@@ -179,7 +179,11 @@ class LockClockFontsPreference @JvmOverloads constructor(
             holder.clock.setTextColor(resolveTextColorPrimary(holder.clock.context))
 
             holder.name.visibility = View.VISIBLE
-            holder.name.text = if (pkg == "android") "Default" else label
+            holder.name.text = if (pkg == "android") {
+                ctx.getString(R.string.themes_lock_screen_clock_font_default)
+            } else {
+                label
+            }
 
             holder.itemView.isActivated = (pkg == selectedPkg)
 
