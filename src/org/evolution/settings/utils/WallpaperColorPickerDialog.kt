@@ -35,12 +35,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import com.github.skydoves.colorpicker.compose.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import com.android.settings.R
 
 @Composable
 fun WallpaperColorPickerDialog(
@@ -154,7 +156,8 @@ fun WallpaperColorPickerDialog(
                     .width(340.dp)
             ) {
                 Text(
-                    text = if (useCustomImage) "Pick Color from Image" else "Pick Color from Wallpaper",
+                    text = if (useCustomImage) stringResource(R.string.wallpaper_color_dialog_title_image)
+                           else stringResource(R.string.wallpaper_color_dialog_title),
                     style = MaterialTheme.typography.headlineSmall,
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
@@ -168,7 +171,7 @@ fun WallpaperColorPickerDialog(
                         modifier = Modifier.size(20.dp)
                     )
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("Import Image from Gallery")
+                    Text(stringResource(R.string.wallpaper_color_import_gallery))
                 }
                 Spacer(modifier = Modifier.height(16.dp))
                 if (isLoading) {
@@ -195,7 +198,7 @@ fun WallpaperColorPickerDialog(
                     OutlinedTextField(
                         value = hexInput,
                         onValueChange = { },
-                        label = { Text("Selected Color") },
+                        label = { Text(stringResource(R.string.wallpaper_color_selected_label)) },
                         prefix = { Text("#") },
                         readOnly = true,
                         singleLine = true,
@@ -226,7 +229,11 @@ fun WallpaperColorPickerDialog(
                     }
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
-                        text = "Tap on the ${if (useCustomImage) "image" else "wallpaper"} to pick a color",
+                        text = stringResource(
+                            R.string.wallpaper_color_tap_hint,
+                            if (useCustomImage) stringResource(R.string.wallpaper_color_source_image)
+                            else stringResource(R.string.wallpaper_color_source_wallpaper)
+                        ),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         modifier = Modifier.padding(start = 4.dp)
@@ -243,7 +250,7 @@ fun WallpaperColorPickerDialog(
                             verticalArrangement = Arrangement.spacedBy(16.dp)
                         ) {
                             Text(
-                                text = "Unable to load wallpaper",
+                                text = stringResource(R.string.wallpaper_color_unable_to_load),
                                 style = MaterialTheme.typography.bodyLarge,
                                 color = MaterialTheme.colorScheme.error
                             )
@@ -254,7 +261,7 @@ fun WallpaperColorPickerDialog(
                                     modifier = Modifier.size(20.dp)
                                 )
                                 Spacer(modifier = Modifier.width(8.dp))
-                                Text("Import Image")
+                                Text(stringResource(R.string.wallpaper_color_import_image))
                             }
                         }
                     }
@@ -267,7 +274,7 @@ fun WallpaperColorPickerDialog(
                     horizontalArrangement = Arrangement.End
                 ) {
                     TextButton(onClick = onDismiss) {
-                        Text("Cancel")
+                        Text(stringResource(R.string.dialog_cancel))
                     }
                     Spacer(modifier = Modifier.width(8.dp))
                     Button(
@@ -278,7 +285,7 @@ fun WallpaperColorPickerDialog(
                         },
                         enabled = !isLoading && selectedColor != Color.Transparent
                     ) {
-                        Text("Apply")
+                        Text(stringResource(R.string.dialog_apply))
                     }
                 }
             }
