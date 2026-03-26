@@ -165,6 +165,27 @@
     <string name="use_secondary_seed_desc">Drive secondary and tertiary palettes from a separate seed color for two-tone theming.</string>
     <string name="secondary_seed_color_title">Secondary seed color</string>
 
+    <!-- Seed Color picker dialog -->
+    <string name="seed_color_dialog_title">Choose Seed Color</string>
+    <string name="seed_color_hex_label">HEX Color</string>
+    <string name="seed_color_hex_invalid">Invalid hex color</string>
+    <string name="seed_color_hue_label">Hue</string>
+    <string name="seed_color_saturation_label">Saturation</string>
+    <string name="seed_color_brightness_label">Brightness</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_apply">Apply</string>
+
+    <!-- Wallpaper Color picker dialog -->
+    <string name="wallpaper_color_dialog_title">Pick Color from Wallpaper</string>
+    <string name="wallpaper_color_dialog_title_image">Pick Color from Image</string>
+    <string name="wallpaper_color_import_gallery">Import Image from Gallery</string>
+    <string name="wallpaper_color_selected_label">Selected Color</string>
+    <string name="wallpaper_color_tap_hint">Tap on the %1$s to pick a color</string>
+    <string name="wallpaper_color_source_wallpaper">wallpaper</string>
+    <string name="wallpaper_color_source_image">image</string>
+    <string name="wallpaper_color_unable_to_load">Unable to load wallpaper</string>
+    <string name="wallpaper_color_import_image">Import Image</string>
+
     <!-- Lock screen -->
     <string name="lock_screen_interface_category">Interface</string>
     <string name="lock_screen_charging_category">Charging</string>
