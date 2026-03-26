@@ -21,9 +21,11 @@ import androidx.compose.ui.geometry.*
 import androidx.compose.ui.graphics.*
 import androidx.compose.ui.graphics.drawscope.*
 import androidx.compose.ui.input.pointer.*
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
+import com.android.settings.R
 import org.evolution.settings.utils.ThemeStyle
 import org.evolution.settings.utils.toArgb
 import kotlin.math.*
@@ -46,7 +48,7 @@ fun StylePickerDialog(
                     .width(320.dp)
             ) {
                 Text(
-                    text = "Theme Style",
+                    text = stringResource(R.string.theme_style_title),
                     style = MaterialTheme.typography.headlineSmall,
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
@@ -102,7 +104,7 @@ fun StylePickerDialog(
                     onClick = onDismiss,
                     modifier = Modifier.align(Alignment.End)
                 ) {
-                    Text("Cancel")
+                    Text(stringResource(R.string.dialog_cancel))
                 }
             }
         }
@@ -144,7 +146,7 @@ fun ColorPickerDialog(
                     .width(320.dp)
             ) {
                 Text(
-                    text = "Choose Seed Color",
+                    text = stringResource(R.string.seed_color_dialog_title),
                     style = MaterialTheme.typography.headlineSmall,
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
@@ -183,11 +185,11 @@ fun ColorPickerDialog(
                             }
                         }
                     },
-                    label = { Text("HEX Color") },
+                    label = { Text(stringResource(R.string.seed_color_hex_label)) },
                     prefix = { Text("#") },
                     isError = hexError,
                     supportingText = if (hexError) {
-                        { Text("Invalid hex color") }
+                        { Text(stringResource(R.string.seed_color_hex_invalid)) }
                     } else null,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
                     singleLine = true,
@@ -197,7 +199,7 @@ fun ColorPickerDialog(
                 Spacer(modifier = Modifier.height(16.dp))
 
                 Text(
-                    text = "Hue",
+                    text = stringResource(R.string.seed_color_hue_label),
                     style = MaterialTheme.typography.labelMedium,
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
@@ -213,7 +215,7 @@ fun ColorPickerDialog(
                 Spacer(modifier = Modifier.height(16.dp))
 
                 Text(
-                    text = "Saturation",
+                    text = stringResource(R.string.seed_color_saturation_label),
                     style = MaterialTheme.typography.labelMedium,
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
@@ -231,7 +233,7 @@ fun ColorPickerDialog(
                 Spacer(modifier = Modifier.height(16.dp))
 
                 Text(
-                    text = "Brightness",
+                    text = stringResource(R.string.seed_color_brightness_label),
                     style = MaterialTheme.typography.labelMedium,
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
@@ -253,7 +255,7 @@ fun ColorPickerDialog(
                     horizontalArrangement = Arrangement.End
                 ) {
                     TextButton(onClick = onDismiss) {
-                        Text("Cancel")
+                        Text(stringResource(R.string.dialog_cancel))
                     }
                     Spacer(modifier = Modifier.width(8.dp))
                     Button(
@@ -264,7 +266,7 @@ fun ColorPickerDialog(
                         },
                         enabled = !hexError && hexInput.length == 6
                     ) {
-                        Text("Apply")
+                        Text(stringResource(R.string.dialog_apply))
                     }
                 }
             }
