@@ -37,12 +37,11 @@ public class ChangelogFragment extends SettingsPreferenceFragment {
     private TextView textView;
     private volatile boolean mViewDestroyed;
 
-    // Branch lookup order for changelog resolution. CNB (Android 17) is tried
-    // first, bka (Android 16) is the legacy fallback, and vic (Android 15) is
-    // last. udc (Android 14) is no longer supported and has been dropped.
-    private static final String[] BRANCH_PRIORITY = {"cnb", "bka", "vic"};
+    // Branch lookup order for changelog resolution. Only cnb (Android 17) is
+    // supported now.
+    private static final String[] BRANCH_PRIORITY = {"cnb"};
     private static final String CHANGELOG_URL_TEMPLATE =
-            "https://raw.githubusercontent.com/Evolution-X/OTA/%s/changelogs/%s.txt";
+            "https://raw.githubusercontent.com/kleidione/evolution/%s/changelogs/%s.txt";
     private static final String EVOLUTION_X_ORG_URL = "https://github.com/Evolution-X";
 
     private int getThemeColor(Context context, int attr) {
